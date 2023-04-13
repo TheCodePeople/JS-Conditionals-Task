@@ -42,15 +42,15 @@ const role = "Admin";
 //3 Check if the entered userName is equal to YOUR_NAME and the role is equal to Admin.
 // - If both conditions are true, print the message Hello ${userName}, you have permission to access the restricted area.
 // - If either of the conditions is false, print the message Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.
-// if (userEnteredName === userName && role == "Admin") {
-//   console.log(
-//     `Hello ${userName}, you have permission to access the restricted area`
-//   );
-// } else {
-//   console.log(
-//     `Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`
-//   );
-// }
+if (userEnteredName === userName && role == "Admin") {
+  console.log(
+    `Hello ${userName}, you have permission to access the restricted area`
+  );
+} else {
+  console.log(
+    `Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`
+  );
+}
 
 /***********************************************************/
 /* Task 3 (if..else Statement): Write a program that checks if a number is positive, negative or zero, using if...else statement.*/
@@ -65,13 +65,13 @@ const role = "Admin";
 // - If the number is positive, print a message saying that it is positive.
 // - If the number is negative, print a message saying that it is negative.
 // - If the number is zero, print a message saying that it is zero.
-// if (inputNumber > 0) {
-//   console.log(`The number is positive`);
-// } else if (inputNumber == 0) {
-//   console.log(`The number is zero`);
-// } else {
-//   console.log(`the number is negative`);
-// }
+if (inputNumber > 0) {
+  console.log(`The number is positive`);
+} else if (inputNumber == 0) {
+  console.log(`The number is zero`);
+} else {
+  console.log(`the number is negative`);
+}
 
 /***********************************************************/
 /* Task 4 (if..else Statement): Create a program that prompts the user for their age and checks if they are old enough to vote.
@@ -81,17 +81,17 @@ const role = "Admin";
 // If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 // let age = prompt("Please enter your age");
 
-// if (age >= 18) {
-//   let register = prompt("Have you registered to vote?");
-//   if (register == "yes") {
-//     console.log(`Great! you're all set to vote`);
-//   } else {
-//     console.log(`you still have time to register to vote`);
-//   }
-// } else {
-//   let yearsToVote = 18 - age;
-//   console.log(`You will be eligible to vote in ${yearsToVote} years`);
-// }
+if (age >= 18) {
+  let register = prompt("Have you registered to vote?");
+  if (register == "yes") {
+    console.log(`Great! you're all set to vote`);
+  } else {
+    console.log(`you still have time to register to vote`);
+  }
+} else {
+  let yearsToVote = 18 - age;
+  console.log(`You will be eligible to vote in ${yearsToVote} years`);
+}
 
 /***********************************************************/
 /* Task 5 (if..else Statement): You are building a pizza ordering system.
