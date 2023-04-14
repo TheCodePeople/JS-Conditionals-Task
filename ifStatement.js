@@ -127,15 +127,15 @@ let size = prompt(
 - If the user input is not a valid pizza size, log an error message to the console.
 */
 let price = 0;
-if (size != "small" && size != "medium" && size != "large") {
-  console.log(`please enter a valid size, ${size}`);
-  size = prompt("Please select the pizza size: small | medium | large :");
-} else if (size == "small") {
+if (size == "small") {
   price = 10;
 } else if (size == "medium") {
   price = 15;
-} else {
+} else if (size == "large") {
   price = 20;
+} else {
+  console.log(`please enter a valid size, ${size}`);
+  size = prompt("Please select the pizza size: small | medium | large :");
 }
 /* Step 3: Ask the user to select toppings
 - Use the prompt() method to ask the user to input the toppings they want, separated by commas.
@@ -144,10 +144,8 @@ if (size != "small" && size != "medium" && size != "large") {
 */
 let toppings =
   prompt(
-    "Please select toppings: Mushroom, tomato, olive, onion, garlic, pineapple"
-  )
-    ?.toLowerCase()
-    .split(",") || [];
+    "Please enter the toppings you want, separated by commas: Mushroom, tomato, olive, onion, garlic, pineapple"
+  )?.split(",") || [];
 /* Step 4: Calculate the cost of the toppings
 - Create a variable called toppingCost.
 - Use an if-else statement to check the length of the toppings array and calculate the toppingCost accordingly.
@@ -156,10 +154,6 @@ let toppings =
 */
 let toppingCost = 0;
 if (toppings.length <= 2) {
-  console.log(
-    "🚀 ~ file: ifStatement.js:159 ~ toppings.length:",
-    toppings.length
-  );
   toppingCost = toppings.length * 2;
 } else {
   toppingCost = toppings.length * 2 * 0.9;
@@ -169,7 +163,9 @@ if (toppings.length <= 2) {
 - Use the toLowerCase() method to convert the user input to lowercase for easier comparison.
 - Store the user input in a variable called drink.
 */
-let drink = prompt("Would you like some drinks?")?.toLowerCase();
+let drink = prompt(
+  "Would you like to add a drink to your order? (yes or no):"
+)?.toLowerCase();
 
 /* Step 6: Calculate the cost of the drink
 - Create a variable called drinkCost.
@@ -177,7 +173,7 @@ let drink = prompt("Would you like some drinks?")?.toLowerCase();
 - If the user wants to add a drink, set the drinkCost variable to 2.
 */
 let drinkCost = 0;
-if (drink) {
+if (drink === "yes") {
   drinkCost = 2;
 }
 /* Step 7: Calculate the total cost of the order
@@ -195,12 +191,12 @@ let discount = 0;
 if (toppings.length > 2 && drink) {
   discount = totalCost * (15 / 100);
   totalCost -= discount;
+  // OR totalCost *= 0.85;
 } else if (toppings.length > 2) {
   discount = totalCost * (10 / 100);
   totalCost -= discount;
 } else if (drink) {
-  discount = totalCost * (2 / 100);
-  totalCost -= discount;
+  totalCost -= 2;
 }
 /* Step 9: Display the total cost of the order to the user
 - Use the console.log() method to display the totalCost variable to the user in the form of a string.
