@@ -37,7 +37,7 @@ const userName = "Zahraa";
 const role = "Admin";
 
 //2 Ask the user to enter their name and store it in a variable called .
-// let userEnteredName = prompt("Please enter your name");
+let userEnteredName = prompt("Please enter your name");
 
 //3 Check if the entered userName is equal to YOUR_NAME and the role is equal to Admin.
 // - If both conditions are true, print the message Hello ${userName}, you have permission to access the restricted area.
@@ -59,7 +59,7 @@ if (userEnteredName === userName && role == "Admin") {
 
 //1 Ask the user to enter a number.
 //2 Convert the input to a float or integer.
-// let inputNumber = parseFloat(prompt("please enter a number"));
+let inputNumber = parseFloat(prompt("please enter a number"));
 
 //3 Write an if...else statement to check whether the number is positive, negative or zero.
 // - If the number is positive, print a message saying that it is positive.
@@ -79,18 +79,18 @@ if (inputNumber > 0) {
  If they are registered, the program should print the message "Great! You are all set to vote."
  If they are not registered, the program should print the message "You still have time to register to vote."*/
 // If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
-// let age = prompt("Please enter your age");
 
+let age = prompt("Please enter your age");
 if (age >= 18) {
-  let register = prompt("Have you registered to vote?");
-  if (register == "yes") {
+  let registered = confirm("Have you registered to vote?");
+  if (registered) {
     console.log(`Great! you're all set to vote`);
   } else {
     console.log(`you still have time to register to vote`);
   }
 } else {
-  let yearsToVote = 18 - age;
-  console.log(`You will be eligible to vote in ${yearsToVote} years`);
+  let yearsLeft = 18 - age;
+  console.log(`You will be eligible to vote in ${yearsLeft} years`);
 }
 
 /***********************************************************/
@@ -129,7 +129,7 @@ let size = prompt(
 let price = 0;
 if (size != "small" && size != "medium" && size != "large") {
   console.log(`please enter a valid size, ${size}`);
-  size = prompt("Please select the pizza size: small | medium | large :").to;
+  size = prompt("Please select the pizza size: small | medium | large :");
 } else if (size == "small") {
   price = 10;
 } else if (size == "medium") {
@@ -142,11 +142,12 @@ if (size != "small" && size != "medium" && size != "large") {
 - Use the split() method to split the user input into an array of toppings.
 - Store the array of toppings in a variable called toppings.
 */
-let toppings = prompt(
-  "Please select toppings: Mushroom, tomato, olive, onion, garlic, pineapple"
-)
-  .toLowerCase()
-  .split(",");
+let toppings =
+  prompt(
+    "Please select toppings: Mushroom, tomato, olive, onion, garlic, pineapple"
+  )
+    ?.toLowerCase()
+    .split(",") || [];
 /* Step 4: Calculate the cost of the toppings
 - Create a variable called toppingCost.
 - Use an if-else statement to check the length of the toppings array and calculate the toppingCost accordingly.
