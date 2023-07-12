@@ -46,11 +46,11 @@ let userEnteredName = prompt("Please enter your name");
 
 if (userEnteredName === userName && role == "Admin") {
   console.log(
-    `Hello ${userName}, you have permission to access the restricted area`
+    `Hello ${userEnteredName}, you have permission to access the restricted area`
   );
 } else {
   console.log(
-    `Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`
+    `Hello ${userEnteredName}, I'm sorry but it seems you're not authorized to access the restricted area.`
   );
 }
 
