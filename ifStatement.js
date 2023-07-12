@@ -13,7 +13,13 @@ Note:
    You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let userAge = 19;
+let minimumDrivingAge = 18;
+if (userAge >= minimumDrivingAge) {
+  console.log("you can driving");
+} else {
+  console.log("you can  not driving");
+}
 /************************************************************************************************
 Task 2 (if..else Statement): 
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -33,7 +39,20 @@ Steps:
     - If either of the conditions is false, print the message Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userName = "Hussein";
+let role = "Admin";
 
+enteredUsername = prompt("Enter your name");
+entetrdrole = prompt("Enter your password");
+if (userName == enteredUsername && entetrdrole == role) {
+  console.log(
+    `Hello ${userName} , and you have permission to access the restricted area.`
+  );
+} else {
+  console.log(
+    `Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`
+  );
+}
 /************************************************************************************************
 Task 3 (if..else Statement):
    Write a program that checks if a number is positive, negative or zero, using if...else statement.
@@ -48,6 +67,15 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+enteredNumber = prompt("Enter a number");
+
+if (Math.round(enteredNumber) > 0) {
+  console.log(`positive ${Math.round(enteredNumber)}`);
+} else if (Math.round(enteredNumber) < 0) {
+  console.log(`negative`);
+} else {
+  console.log(`zero`);
+}
 /*************************************************************************************************
 Task 4 (if..else Statement):
 
@@ -59,7 +87,21 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let UserAge = prompt("enter your age");
+let minimumVoteAge = 18;
+let registered;
+if (UserAge >= minimumVoteAge) {
+  if (confirm("Are registered to vote ?") == true) {
+    registered = "Great! You are all set to vote.";
+  } else {
+    registered = "You still have time to register to vote.";
+  }
+} else {
+  let x = 18 - UserAge;
+  console.log(
+    `You will be eligible to vote in ${x} years", where ${x} is the number of years left.`
+  );
+}
 /*************************************************************************************************
 Task 5 (if..else Statement): 
 
@@ -122,3 +164,57 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let size = prompt(
+  "please write your size of your pizza you want small pizza ,medium pizza ,large pizza"
+);
+
+let sizeInput = size.toLocaleLowerCase();
+let small = "small pizza";
+let medium = "medium pizza";
+let large = "large pizza";
+let price;
+if (sizeInput === small) {
+  let price = 10;
+} else if (sizeInput === medium) {
+  let price = 15;
+} else if (sizeInput === large) {
+  let price = 20;
+} else {
+  console.log("a valid pizza size , please enter again");
+}
+let toppings = prompt("input the toppings they want");
+let myArray = toppings.split(" ");
+let array = myArray.length();
+let toppingCost = 1;
+if (array <= 2) {
+  toppingCost = toppingCost * 2;
+} else {
+  toppingCost = toppingCost * 2 * 0.9;
+}
+let drink;
+if (confirm("you want a drink ? ?") == true) {
+  drink = 2;
+} else {
+  drink = 0;
+}
+
+/* Step 8: Apply discounts based on the user's order
+- Use if-else-if statements to check if the user qualifies for any discounts.
+- If the user adds more than 2 toppings and orders a drink, apply a 15% discount to the totalCost.
+- If the user adds more than 2 toppings, apply a 10% discount to the totalCost.
+- If the user orders a drink, subtract $2 from the totalCost. */
+
+let totalCost = price + toppingCost + drink;
+
+if (toppingCost > 2 && drink > 2) {
+  toppingCost = toppingCost - toppingCost * 15;
+} else if (toppingCost > 2) {
+  toppingCost = toppingCost - toppingCost * 10;
+} else if (drink > 2) {
+  toppingCost = toppingCost - 2;
+} else {
+  console.log("visit us more to git more discount");
+}
+
+let n = toppingCost.toFixed(2);
+console.log(n);
