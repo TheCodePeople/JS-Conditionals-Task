@@ -174,17 +174,18 @@ let medium = "medium pizza";
 let large = "large pizza";
 let price;
 if (sizeInput === small) {
-  let price = 10;
+  price = 10;
 } else if (sizeInput === medium) {
-  let price = 15;
+  price = 15;
 } else if (sizeInput === large) {
-  let price = 20;
+  price = 20;
 } else {
   console.log("a valid pizza size , please enter again");
 }
 let toppings = prompt("input the toppings they want");
+console.log(toppings);
 let myArray = toppings.split(" ");
-let array = myArray.length();
+let array = myArray.length;
 let toppingCost = 1;
 if (array <= 2) {
   toppingCost = toppingCost * 2;
@@ -198,23 +199,17 @@ if (confirm("you want a drink ? ?") == true) {
   drink = 0;
 }
 
-/* Step 8: Apply discounts based on the user's order
-- Use if-else-if statements to check if the user qualifies for any discounts.
-- If the user adds more than 2 toppings and orders a drink, apply a 15% discount to the totalCost.
-- If the user adds more than 2 toppings, apply a 10% discount to the totalCost.
-- If the user orders a drink, subtract $2 from the totalCost. */
-
 let totalCost = price + toppingCost + drink;
 
 if (toppingCost > 2 && drink > 2) {
-  toppingCost = toppingCost - toppingCost * 15;
+  totalCost = totalCost - totalCost * 15;
 } else if (toppingCost > 2) {
-  toppingCost = toppingCost - toppingCost * 10;
+  totalCost = totalCost - totalCost * 10;
 } else if (drink > 2) {
-  toppingCost = toppingCost - 2;
+  totalCost = totalCost - 2;
 } else {
   console.log("visit us more to git more discount");
 }
 
-let n = toppingCost.toFixed(2);
-console.log(n);
+let n = totalCost.toFixed(2);
+console.log(` the total is: ${n} `);
