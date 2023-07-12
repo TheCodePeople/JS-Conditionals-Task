@@ -14,7 +14,8 @@ Steps:
   2. Create a switch statement that checks the value of sign.
     - For each case, write a horoscope message for that sign for the day.
     - If the user enters a sign that is not recognized by the switch statement, display an error message saying "Sorry, we do not have a horoscope for that sign."
-Note: Check the file called "Clothing_Recommendations.md" to find the list of weather forecasts and their corresponding clothing recommendations  
+
+Note: Check the file called "Zodiac_Signs.md" to find the list of zodiac signs and their corresponding horoscope messages
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 let sign = prompt(
@@ -102,6 +103,8 @@ Example:
   ------------------------------------ 
   - What's the weather forecast for today? Sunny
   - Recommendations: Wear sunscreen, a hat, and sunglasses.
+
+Note: Check the file called "Clothing_Recommendations.md" to find the list of weather forecasts and their corresponding clothing recommendations  
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 let forecastedWeather = prompt(
