@@ -13,7 +13,16 @@ Note:
    You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let userAge=prompt("Enter your age");
+let minAgeDriving=18;
+if(userAge >= minAgeDriving)
+{
+ alert("old enough to drive.");
+}
+ if(userAge < minAgeDriving)
+ {
+  alert("the person is not eligible to get a license yet.");
+ }
 /************************************************************************************************
 Task 2 (if..else Statement): 
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -33,7 +42,16 @@ Steps:
     - If either of the conditions is false, print the message Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let username="abbas";
+let role="Admin";
+let enteredUsername=prompt("Enter Name");
+if(username == enteredUsername && role =="Admin")
+{
+  alert(`Hellow ${username} , and you have permission to access the restricted area`);
+}else
+{
+  alert(`Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`);
+}
 /************************************************************************************************
 Task 3 (if..else Statement):
    Write a program that checks if a number is positive, negative or zero, using if...else statement.
@@ -47,7 +65,17 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let number=prompt("Enter the Number");
+if(number > 0)
+{
+  console.log("Number is Positive");
+}else if(number <0)
+{
+  console.log("Number is Negative");
+}else if(number == 0)
+{
+  console.log("Number is Zero");
+}
 /*************************************************************************************************
 Task 4 (if..else Statement):
 
@@ -59,7 +87,21 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let voteAge = prompt("Enter Age");
+if(parseInt(voteAge) > 18)
+{
+  if(confirm("Are You Registerd") == true )
+  {
+    alert("Great! You are all set to vote");
+  }else
+  {
+   alert("You still have time to register to vote");
+  }
+}else
+{
+  let ageStill = 18 -voteAge;
+ alert(`You will be eligible to vote in ${ageStill} years, where X is the number of years left`);
+}
 /*************************************************************************************************
 Task 5 (if..else Statement): 
 
@@ -122,3 +164,50 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let pizaSize=prompt("Enter Size of pizza");
+let size=pizaSize.toLowerCase();
+let price;
+if(size == 5)
+{
+  price = 5000;
+
+}else if(size==10)
+{
+  price=10000;
+}else if(size==15){
+  price=15000;
+}else {
+  alert("Error")
+}
+
+let toppingsEntered = prompt("Enter Toppings");
+let toppings = toppingsEntered.split(',');
+for(let i=0;i<toppings.length;++i)
+{
+  alert(toppings[i]);
+}
+let drinkCost=0;
+let isDrink=confirm("Are You want To Add Any Drink");
+let drinkEntered = prompt("Enter Name Of  Drink");
+if(isDrink==true)
+{
+drinkCost=2;
+}
+
+let totalCost = price + (toppings.length*2000) + drinkCost;
+
+
+let discount;
+if(toppings.length>2 && isDrink==true)
+{
+discount = totalCost - (totalCost * 0.15);
+
+}else if(toppings.length>2)
+{
+  discount = totalCost - (totalCost * 0.10);
+} else if(isDrink == true)
+{
+  totalCost = totalCost - (totalCost * 0.2);
+}
+
+alert(`Hellow ,,, Total Cost is ${discount.toFixed(2)}`);
