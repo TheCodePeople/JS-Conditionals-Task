@@ -8,12 +8,19 @@ Steps:
   3. Write an if statement that checks whether the person's age is greater than or equal to the minimum driving age.
     - If the person's age is greater than or equal to the minimum driving age, print a message saying that the person is old enough to drive.
     - If the person's age is less than the minimum driving age, print a message saying that the person is not eligible to get a license yet.
-
+.
 Note:
    You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let userAge=25;
+let minimumDrivingAge=18;
+if (userAge>=minimumDrivingAg){
+  alert("the person is old enough to drive");
+}
+else {
+  alert("the person is not eligible to get a license yet");
+}
 /************************************************************************************************
 Task 2 (if..else Statement): 
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -33,6 +40,14 @@ Steps:
     - If either of the conditions is false, print the message Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+let username = "ahmed";
+let role ="admin";
+let enteredUsername=prompt("enter your name ");
+if(username===enteredUsername && role=="admin"){
+  console.log("hello ${enterusername}, and you have permission to access the restricted area. ");
+}else {
+  console.log(Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area"");
+}
 
 /************************************************************************************************
 Task 3 (if..else Statement):
@@ -47,7 +62,15 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+let userNumber = prompt("enter a number");
+let parsedNumber = parseInt(userNumber);
+if(parsedNumber>0){
+  console.log('the number ${parsedNumber} is positive' );
+} else if(parsedNumber<0){
+  console.log('the number ${parsednNumber} is negative');
+}else {
+  console.log('the number is zero'); 
+}
 /*************************************************************************************************
 Task 4 (if..else Statement):
 
@@ -122,3 +145,5 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let size=prompt("enter pizza size ").toLowerCase();
+let pric
