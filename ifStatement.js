@@ -14,6 +14,12 @@ Note:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+// let userAge  = 15;
+// let minimumDrivingAge = 18;
+// if (userAge >= minimumDrivingAge) {
+//   console.log("youCanDrivingNow");
+// }else {console.log("بعدك طفل اهلك يدرون بيك هنا");}
+
 /************************************************************************************************
 Task 2 (if..else Statement): 
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -34,6 +40,15 @@ Steps:
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+// let userName = "hassan";
+// let role = "admin";
+// let enteredUsername = prompt("ادخل اسمك");
+// if (enteredUsername == userName && role == "admin") {
+//       console.log( `${userName}هلا بيك`);
+// }else{console.log("لا جذب انت مو المسؤول");}
+
+
+
 /************************************************************************************************
 Task 3 (if..else Statement):
    Write a program that checks if a number is positive, negative or zero, using if...else statement.
@@ -48,6 +63,20 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+// let enterNumber = prompt("enter your number");
+// let number = parseInt(enterNumber);
+// if (enterNumber < 0){
+//   console.log("the number is negative");
+// }
+
+// if (enterNumber > 0){
+//   console.log("the number is positive");
+// }
+
+// if (enterNumber === 0){
+//   console.log("the number is zero");
+// }
+
 /*************************************************************************************************
 Task 4 (if..else Statement):
 
@@ -59,6 +88,20 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+// let minimumAge = 18;
+// let enterAge = prompt("enter your age");
+// let yearsLeft =minimumAge - enterAge;
+// if (enterAge >= minimumAge) {
+ 
+//  if (confirm("سجلت اسمك")) {
+//  console.log("جيد يلا روح صوت")
+//  }else {
+//   console.log(" يهو وصلك لهنا سجل اسمك")
+
+//  }
+// }else {
+//   console.log(`${yearsLeft}يصير عمرك 18 بعد  `);
+// }
 
 /*************************************************************************************************
 Task 5 (if..else Statement): 
@@ -122,3 +165,50 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+
+let sizePizza = prompt("select pizza size").toLowerCase();
+
+let price;
+
+if (sizePizza == "small") {
+  price = 10;
+  
+}
+if (sizePizza == "medium") {
+  price = 15;
+  
+}
+if (sizePizza == "large") {
+  price = 20;
+  
+} if (!sizePizza) {
+  console.log("Please write what size do you want!");
+} 
+ 
+let enterTopping = prompt("enter topping, separated by commas").toLowerCase();
+let topping = enterTopping.split(",");
+
+let toppingCost;
+if (topping.length <= 2) {
+  toppingCost = topping.length * 2;
+} else {
+  toppingCost = topping.length * 2 * 0.9;
+}
+
+let drink = prompt("do you want drink with 'yes' or 'no'").toLowerCase();
+let drinkCost;
+
+if (drink == "yes") {
+    drinkCost = 2;
+} else if (drink == "no") {
+  drinkCost = 0;
+}
+
+let totalCost;
+totalCost = drinkCost + toppingCost + price;
+
+if (topping.length <= 3 && drink == "yes") {
+    totalCost = totalCost - 2 * 0.1;
+}
+
+console.log(`The total cost $${totalCost.toFixed()}`);
