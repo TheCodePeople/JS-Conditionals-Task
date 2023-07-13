@@ -50,7 +50,7 @@ if(username == enteredUsername && role =="Admin")
   alert(`Hellow ${username} , and you have permission to access the restricted area`);
 }else
 {
-  alert(`Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`);
+  alert("I'm sorry but it seems you're not authorized to access the restricted area.");
 }
 /************************************************************************************************
 Task 3 (if..else Statement):
@@ -68,13 +68,13 @@ Steps:
 let number=prompt("Enter the Number");
 if(number > 0)
 {
-  console.log("Number is Positive");
+  alert("Number is Positive");
 }else if(number <0)
 {
-  console.log("Number is Negative");
+  alert("Number is Negative");
 }else if(number == 0)
 {
-  console.log("Number is Zero");
+  alert("Number is Zero");
 }
 /*************************************************************************************************
 Task 4 (if..else Statement):
@@ -188,11 +188,12 @@ for(let i=0;i<toppings.length;++i)
 }
 let drinkCost=0;
 let isDrink=confirm("Are You want To Add Any Drink");
-let drinkEntered = prompt("Enter Name Of  Drink");
 if(isDrink==true)
 {
 drinkCost=2;
 }
+let drinkEntered = prompt("Enter Name Of  Drink");
+
 
 let totalCost = price + (toppings.length*2000) + drinkCost;
 
