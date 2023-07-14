@@ -13,6 +13,14 @@ Note:
    You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userAge =19;
+let minDrAge=18;
+if(userAge>=minDrAge){
+  console.log(" the person is old enough to drive.");
+}
+if(userAge<minDrAge){
+  console.log("the person is not eligible to get a license yet.");
+}
 
 /************************************************************************************************
 Task 2 (if..else Statement): 
@@ -33,6 +41,17 @@ Steps:
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userName="abed";
+let role="admin";
+let user=prompt("entered Username")
+if(userName===user){
+  console.log(`Hello ${userName}`);
+}
+else{
+  console.log(`Hello ${user} I'm sorry but it seems you're not authorized to access the restricted area`)
+}
+
+
 
 /************************************************************************************************
 Task 3 (if..else Statement):
@@ -47,6 +66,18 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+ let useraa=prompt("enter the number")
+ let convnum=parseInt(useraa)
+ if(convnum>0){
+  console.log("that it is positive");
+ }
+ if(convnum<0){
+console.log("it is negative");
+ }
+ if(convnum==0){
+  console.log("is zero");
+ }
+ 
 
 /*************************************************************************************************
 Task 4 (if..else Statement):
@@ -59,6 +90,11 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let agess=18;
+let chage=prompt("enter the age vote");
+if(agess===chage){
+  console.log("if you rigersterid");
+}
 
 /*************************************************************************************************
 Task 5 (if..else Statement): 
