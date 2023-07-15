@@ -17,6 +17,20 @@ Steps:
 Note: Check the file called "Clothing_Recommendations.md" to find the list of weather forecasts and their corresponding clothing recommendations  
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+//console.log("Scorpio , Gemini ");
+let zodiac=prompt("enter the tower  (Scorpio , Gemini)");
+
+switch(zodiac)
+{ 
+  case 'Scorpio':  console.log (" You will have a pleasant surprise today in your career  ");
+  break;
+
+  case 'Gemini': console.log(" You may feel like you are in a rut today. Try doing something out of your comfor");
+  break;  
+
+  default:
+    console.log("Sorry, we do not have a horoscope for that sign.");
+}
 
 /************************************************************************************************
 Task 6 (Switch Statement):
@@ -29,10 +43,28 @@ Steps:
     - If the user enters a weather condition that is not recognized by the switch statement, display an error message saying "Sorry, we do not have recommendations for that weather condition."
 
 Example:
-  - What's the weather forecast for today? Rainy
-  - Recommendations: Wear a waterproof jacket, boots, and bring an umbrella.
+  - What's the weather forecast for today? Rainy.
+  - Recommendations: Wear a waterproof jacket, boots, and bring an umbrella
   ------------------------------------ 
   - What's the weather forecast for today? Sunny
   - Recommendations: Wear sunscreen, a hat, and sunglasses.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+//console.log("Rainy , Sunny , Cloidy , Snowy ")
+let weather=prompt("enter the forecasted weather for the day (Rainy , Sunny , Cloidy , Snowy)");
+
+switch(weather)
+{
+case 'Rainy': console.log(" Wear a waterproof jacket, boots, and bring an umbrella") ;
+break;
+
+case 'Sunny':console.log("Wear sunscreen, a hat, and sunglasses");
+break;
+
+case  'Cloudy': console.log("Beware, there is a possibility of rain");
+break;
+
+case 'Snowy': console.log("Wear plenty of clothes, it's cold");
+break;
+default :console.log(weather);
+}
