@@ -19,7 +19,7 @@ let minimumDrivingAge = 18;
 
 if (userAge >= minimumDrivingAge) {
   console.log("You are old enough to drive");
-}else{
+} else {
   console.log("You are not eligible to get a license yet");
 }
 
@@ -49,9 +49,9 @@ let enteredUsername = prompt("Enter your name");
 
 
 if (enteredUsername == userName && role == "Admin") {
-  console.log(`Hello ${userName}, and you have permission to access the restricted area`);
-}else{
-  console.log(`Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area`);
+  console.log(`Hello ${enteredUsername}, and you have permission to access the restricted area`);
+} else {
+  console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area`);
 }
 
 
@@ -74,9 +74,9 @@ number = parseInt(number);
 
 if (number > 0) {
   console.log("The number is positive");
-}else if (number < 0) {
+} else if (number < 0) {
   console.log("The number is negative");
-}else{
+} else {
   console.log("The number is zero");
 }
 
@@ -99,10 +99,10 @@ if (age >= 18) {
   let registered = confirm("Are you registered to vote?");
   if (registered) {
     console.log("Great! You are all set to vote.");
-  }else{
+  } else {
     console.log("You still have time to register to vote.");
   }
-}else{
+} else {
   let yearsLeft = 18 - age;
   console.log(`You will be eligible to vote in ${yearsLeft} years`);
 }
@@ -176,11 +176,11 @@ size = size.toLowerCase();
 let price;
 if (size == "small") {
   price = 10;
-}else if (size == "medium") {
+} else if (size == "medium") {
   price = 15;
-}else if (size == "large") {
+} else if (size == "large") {
   price = 20;
-}else{
+} else {
   console.log("Invalid pizza size");
 }
 
@@ -190,7 +190,7 @@ toppings = toppings.split(",");
 let toppingCost;
 if (toppings.length <= 2) {
   toppingCost = toppings.length * 2;
-}else{
+} else {
   toppingCost = toppings.length * 2 * 0.9;
 }
 
@@ -206,9 +206,9 @@ if (drink == "yes") {
 let totalCost = price + toppingCost + drinkCost;
 if (toppings.length > 2 && drink == "yes") {
   totalCost *= 0.85;
-}else if (toppings.length > 2) {
+} else if (toppings.length > 2) {
   totalCost *= 0.9;
-}else if (drink == "yes") {
+} else if (drink == "yes") {
   totalCost -= 2;
 }
 
