@@ -21,18 +21,30 @@ Note: Check the file called "Clothing_Recommendations.md" to find the list of we
 sign = prompt("Enter your Zodiac Sign:");
 
 switch (sign) {
-  case "Scorpio":
-  console.log("Your horoscope for the day: You will have a pleasant surprise today in your career.");
+  case "Aries":
+    console.log(
+      "Your horoscope for thYou're feeling bold and energetic today, Aries! Take advantage of this burst of energy and tackle any challenges that come your way. Your determination and confidence will help you achieve your goals."
+    );
 
-  break;
+    break;
   case "Gemini":
-  console.log("Your horoscope for the day: You may feel like you are in a rut today. Try doing something out of your comfort zone to break the monotony.");
+    console.log(
+      "Your social calendar is likely to be full today, Gemini. You're in the mood for socializing and networking. Make new connections and engage in stimulating conversations. Keep an open mind."
+    );
 
-  break;
+    break;
+
+  case "Leo":
+    console.log(
+      "Your creativity is on fire today, Leo. Express yourself through your artistic pursuits and let your inner child come out to play. Your confidence and charisma will attract attention."
+    );
+    break;
+  case "Virgo":
+    console.log(
+      "It's a good day for organizing and decluttering, Virgo. Clean up your physical space and tidy up your thoughts. Focus on practical matters and set achievable goals."
+    );
   default:
-  console.log("Sorry, we do not have a horoscope for that sign.");
-  break;
-  
+    console.log("Sorry, we do not have a horoscope for that sign.");
 }
 /************************************************************************************************
 Task 6 (Switch Statement):
@@ -53,28 +65,32 @@ Example:
   - Recommendations: Wear sunscreen, a hat, and sunglasses.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-weatherForecast = prompt('What\'s the Weather Forecast Today?');
+weatherForecast = prompt("What's the Weather Forecast Today?");
 
 switch (weatherForecast) {
   case "sunny":
-  console.log('Recommendations: Wear a waterproof jacket, boots, and bring an umbrella.')
-  break;
+    console.log(
+      "Recommendations: Wear a waterproof jacket, boots, and bring an umbrella."
+    );
+    break;
   case "cloudy":
-  console.log('Recommendations: Wear sunscreen, a hat, and sunglasses.')
-  break;
-  default:
-  console.log('Sorry, we do not have recommendations for that weather condition.')
-  break;
-  
+    console.log("Recommendations: Wear sunscreen, a hat, and sunglasses.");
+    break;
+
+    console.log(
+      "Sorry, we do not have recommendations for that weather condition."
+    );
+    break;
+
   case "rainy":
-  console.log('Recommendations: Wear a waterproof jacket, boots, and bring an umbrella.')
-  break;
+    console.log(
+      "Recommendations: Wear a waterproof jacket, boots, and bring an umbrella."
+    );
+    break;
   case "snowy":
-  console.log('Recommendations: Wear Waterproof or water-resistant fabrics like Gore-Tex, nylon, or polyester to stay dry.')
-  break;
-      }
-
-
-
-
-
+    console.log(
+      "Recommendations: Wear Waterproof or water-resistant fabrics like Gore-Tex, nylon, or polyester to stay dry."
+    );
+    break;
+  default:
+}
