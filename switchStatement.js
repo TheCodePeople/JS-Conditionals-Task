@@ -107,105 +107,103 @@ let weatherForecast = prompt(
 ).toLocaleLowerCase();
 switch (weatherForecast) {
   case "sunny":
-    document.write("Weather: Sunny    ");
-    document.write("<br>");
-    document.write("Recommendations");
-    document.write("<br>");
+    document.write("Weather: Sunny   <br>  ");
+
+    document.write("Recommendations <br> ");
+
     document.write(
-      "1- Choose lightweight cotton, linen, rayon, chambray, or silk fabrics for breathability and comfort."
+      "1- Choose lightweight cotton, linen, rayon, chambray, or silk fabrics for breathability and comfort. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "2- Opt for light colors and loose-fitting styles to reflect heat and allow air circulation."
+      "2- Opt for light colors and loose-fitting styles to reflect heat and allow air circulation. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "3- Wear appropriate sun protection, such as a wide-brimmed hat and sunglasses, and apply sunscreen."
+      "3- Wear appropriate sun protection, such as a wide-brimmed hat and sunglasses, and apply sunscreen. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "4- Stay hydrated and enjoy the sunny weather in comfortable and breathable clothes!"
+      "4- Stay hydrated and enjoy the sunny weather in comfortable and breathable clothes! <br> "
     );
 
     break;
   case "rainy":
-    document.write("Weather: Rainy    ");
-    document.write("<br>");
-    document.write("Recommendations");
-    document.write("<br>");
+    document.write("Weather: Rainy  <br>  ");
+
+    document.write("Recommendations <br> ");
+
     document.write(
-      "1- Choose waterproof or water-resistant fabrics like polyester, nylon, or Gore-Tex for maximum protection.   "
+      "1- Choose waterproof or water-resistant fabrics like polyester, nylon, or Gore-Tex for maximum protection. <br>  "
     );
-    document.write("<br>");
+
     document.write(
-      "2- Synthetic blends are also a good option for their water-repelling properties."
+      "2- Synthetic blends are also a good option for their water-repelling properties. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "3- Avoid absorbent fabrics like cotton or silk that can become heavy when wet."
+      "3- Avoid absorbent fabrics like cotton or silk that can become heavy when wet. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "4- Consider treated fabrics that are coated with a water-repellent finish."
+      "4- Consider treated fabrics that are coated with a water-repellent finish. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "5- Pair rain gear with appropriate footwear and rain accessories as needed to stay dry in rainy weather."
+      "5- Pair rain gear with appropriate footwear and rain accessories as needed to stay dry in rainy weather. <br> "
     );
-    document.write("<br>");
+
     break;
   case "cloudy":
-    document.write("Weather: Cloudy ");
-    document.write("<br>");
-    document.write("Recommendations");
-    document.write("<br>");
+    document.write("Weather: Cloudy <br> ");
+
+    document.write("Recommendations <br> ");
+
     document.write(
-      "1- Layer with lightweight knits, fleece, or flannel for easy adjustment to changing temperatures."
+      "1- Layer with lightweight knits, fleece, or flannel for easy adjustment to changing temperatures. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "2- Choose breathable fabrics like cotton, bamboo, or modal for comfort."
+      "2- Choose breathable fabrics like cotton, bamboo, or modal for comfort. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "3- Opt for moisture-wicking fabrics like polyester or nylon to stay dry in light drizzle or humidity."
+      "3- Opt for moisture-wicking fabrics like polyester or nylon to stay dry in light drizzle or humidity. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "4- Consider fabrics with stretch for flexibility and comfort during activities."
+      "4- Consider fabrics with stretch for flexibility and comfort during activities. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "5- Don't forget to have a light jacket or coat made of weather-resistant materials for added protection from wind or light rain. Being prepared with versatile fabrics and layering options can help you stay comfortable in changing weather conditions during cloudy days!"
+      "5- Don't forget to have a light jacket or coat made of weather-resistant materials for added protection from wind or light rain. Being prepared with versatile fabrics and layering options can help you stay comfortable in changing weather conditions during cloudy days! <br> "
     );
-    document.write("<br>");
 
     break;
   case "snowy":
-    document.write("Weather: Snowy  ");
-    document.write("<br>");
-    document.write("Recommendations");
-    document.write("<br>");
+    document.write("Weather: Snowy <br> ");
+
+    document.write("Recommendations <br> ");
+
     document.write(
-      "1- Insulating fabrics like fleece, down, or synthetic insulation for warmth."
+      "1- Insulating fabrics like fleece, down, or synthetic insulation for warmth. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "2- Waterproof or water-resistant fabrics like Gore-Tex, nylon, or polyester to stay dry."
+      "2- Waterproof or water-resistant fabrics like Gore-Tex, nylon, or polyester to stay dry. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "3- Moisture-wicking fabrics like polyester or merino wool to keep you dry."
+      "3- Moisture-wicking fabrics like polyester or merino wool to keep you dry. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "4- Layering fabrics such as thermal knits, fleece, or merino wool for insulation."
+      "4- Layering fabrics such as thermal knits, fleece, or merino wool for insulation. <br> "
     );
-    document.write("<br>");
+
     document.write(
-      "5- Windproof fabrics like nylon or softshell materials for protection from wind chill. Prioritize warmth, insulation, moisture management, and wind protection when dressing for snowy weather, and be sure to layer appropriately to stay warm and dry in snowy conditions!"
+      "5- Windproof fabrics like nylon or softshell materials for protection from wind chill. Prioritize warmth, insulation, moisture management, and wind protection when dressing for snowy weather, and be sure to layer appropriately to stay warm and dry in snowy conditions! <br> "
     );
-    document.write("<br>");
 
     break;
 
