@@ -7,7 +7,7 @@
 3. Gemini (May 21 - June 20):
    Horoscope: Your social calendar is likely to be full today, Gemini. You're in the mood for socializing and networking. Make new connections and engage in stimulating conversations. Keep an open mind.
 
-4. Cancer (June 21 - July 22):
+4.Cancer  (June 21 - July 22):
    Horoscope: It's time to take care of yourself, Cancer. Pay attention to your emotional well-being and prioritize self-care. Take a break from your usual routine and indulge in some self-nurturing activities.
 
 5. Leo (July 23 - August 22):
