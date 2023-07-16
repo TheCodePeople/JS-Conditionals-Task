@@ -77,11 +77,6 @@ switch (weatherForecast) {
     console.log("Recommendations: Wear sunscreen, a hat, and sunglasses.");
     break;
 
-    console.log(
-      "Sorry, we do not have recommendations for that weather condition."
-    );
-    break;
-
   case "rainy":
     console.log(
       "Recommendations: Wear a waterproof jacket, boots, and bring an umbrella."
@@ -91,6 +86,7 @@ switch (weatherForecast) {
     console.log(
       "Recommendations: Wear Waterproof or water-resistant fabrics like Gore-Tex, nylon, or polyester to stay dry."
     );
-    break;
   default:
-}
+}   console.log(
+      "Sorry, we do not have recommendations for that weather condition."
+    );
