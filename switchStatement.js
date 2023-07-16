@@ -24,7 +24,7 @@ let sign = prompt(
 switch (sign) {
   case "gemini":
     console.log(
-      "u have a bad luck and u mom die"
+      "u have a bad luck and u mom die")
     break;
   case "cancer":
     console.log(
@@ -103,3 +103,21 @@ Example:
   - Recommendations: Wear sunscreen, a hat, and sunglasses.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let weather=prompt( "What's the weather forecast for today? ")
+switch(weather){
+  case "sunny":
+  console.log("Choose lightweight cotton, linen, rayon, chambray, or silk fabrics for breathability and comfort.")
+  break;
+  case "Rainy":
+  console.log("Choose waterproof or water-resistant fabrics like polyester, nylon, or Gore-Tex for maximum protectio")
+  break;
+  case "Cloudy":
+  console.log("Layer with lightweight knits, fleece, or flannel for easy adjustment to changing temperatures.")
+  break 
+  case"Snowy":
+  console.log("nsulating fabrics like fleece, down, or synthetic insulation for warmth." );
+  
+  break;
+}
+
+
