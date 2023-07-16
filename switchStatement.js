@@ -89,5 +89,5 @@ break;
 
 case 'Snowy': console.log("Wear plenty of clothes, it's cold");
 break;
-default :console.log(weather);
+default :console.log("Sorry, we do not have recommendations for that weather condition");
 }
