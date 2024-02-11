@@ -15,7 +15,7 @@ Note:
 // TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 2 (if..else Statement):  (20 pts) 👨🏽‍💼
+Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
   Create a program that checks if a person is an admin, using just if...else statement. 
 
 Description: 
@@ -49,7 +49,7 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /*************************************************************************************************
-Task 4 (Nested if..else Statement): (30 pts) 👵🏼
+Task 4 (Nested if..else Statement): (15 pts) 👵🏼
 
 Steps:
   1. Create a program that prompts the user for their age and checks if they are old enough to vote. (Note: don't forget to convert the input into an integer)

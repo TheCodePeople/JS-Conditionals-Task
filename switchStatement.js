@@ -1,5 +1,5 @@
 /************************************************************************************************
-Task 5 (Switch Statement): 
+Task 5 (Switch Statement): (20 pts)
     Write a program that takes in a user's zodiac sign and outputs a horoscope for the day.
 
 Example:
@@ -20,7 +20,7 @@ Steps:
 //  TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 6 (Switch Statement):
+Task 6 (Switch Statement): (20 pts)
     Create a program that helps you decide what to wear based on the weather forecast for the day.
 
 Steps:
