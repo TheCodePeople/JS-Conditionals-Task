@@ -14,6 +14,14 @@ Note:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+let userAge = 17;
+let minDrivingAge = 18;
+if (userAge >= minDrivingAge) {
+  console.log("the person is old enough to drive.");
+} else {
+  console.log("the person is not eligible to get a license yet.");
+}
+
 /************************************************************************************************
 Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
   Create a program that checks if a person is an admin, using just if...else statement. 
@@ -34,6 +42,18 @@ Steps:
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+// let userName = "Hamza";
+// let role = "admin";
+
+// let enteredUsername = prompt("Enter your name: ")
+// let your_role = prompt("Enter your role: ")
+
+// if (enteredUsername === userName && your_role === role) {
+//   console.log(`Hello ${enteredUsername}, and you have permission to access the restricted area.`);
+// } else {
+//   console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.`);
+
+// }
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts) 🔢
    Write a program that checks if a number is positive, negative or zero, using if...else statement. 
@@ -48,6 +68,21 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+// let number = prompt("Enter a number: ")
+// number = parseInt(number);
+
+// if (number === 0) {
+//   console.log("this number is zero");
+
+// } else if (number % 2 != 0){
+//   console.log("this number is odd");
+
+// }else {
+//     console.log("this number is even");
+
+// }
+
+
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (15 pts) 👵🏼
 
@@ -59,6 +94,25 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+
+let age = prompt("enter your age");
+
+if (age >= 18) {
+  let confirmation = confirm("If you wish to continue voting or not, please enter either OK or Cancel")
+
+  if (confirmation) {
+    console.log("Great! You are all set to vote.");
+
+  }else{
+    console.log("Why did you waste my time then?");
+
+  }
+
+} else {
+  let remainingLife = 18 % age;
+  console.log(`You will be eligible to vote in ${remainingLife} years`);
+}
+
 
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts) 🍕
