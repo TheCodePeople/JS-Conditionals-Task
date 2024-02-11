@@ -13,6 +13,10 @@ Note:
    You can change the value of the age variable to test different cases. 
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userAge=20
+let minDrivingAge=18
+if(userAge>minDrivingAge){console.log("the person is old enough to drive");}
+else{console.log("the person is not old enough to drive");}
 
 /************************************************************************************************
 Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
@@ -33,6 +37,11 @@ Steps:
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userName="ameer"
+let role="admin"
+let username= prompt ('enter your name')
+if (userName==username&&role=="admin"){console.log(` Hello ${userName} , and you have permission to access the restricted area.`);}
+else{console.log(` Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.`);}
 
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts) 🔢
@@ -47,6 +56,11 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let number=2
+let asknumber=prompt("enter a number")
+if(asknumber==0){console.log(`it is zero`);}
+else if(asknumber%2 !== 0 ){console.log(`it is negative.`);}
+else{console.log(`it is positive.`);}
 
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (15 pts) 👵🏼
@@ -59,6 +73,13 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userage=18
+if (userage>=18)
+if(confirm("press" )) console.log(`you press ok `);
+else(console.log("Why did you waste my time then? 😀."))
+else{ console.log( "You will be eligible to vote in 18 years");}
+
+
 
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts) 🍕
