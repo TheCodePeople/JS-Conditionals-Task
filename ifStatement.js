@@ -1,6 +1,6 @@
 /************************************************************************************************
-Task 1 (if..else Statement): (10 pts)
-  Create a program that checks if a person is old enough to drive, using an if statement.
+Task 1 (if..else Statement): (10 pts) 🪪
+  Create a program that checks if a person is old enough to drive, using an if statement. 
 
 Steps:
   1. Define a variable named `userAge` to store the person's age.
@@ -15,8 +15,8 @@ Note:
 // TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 2 (if..else Statement):  (20 pts)
-  Create a program that checks if a person is an admin, using just if...else statement.
+Task 2 (if..else Statement):  (20 pts) 👨🏽‍💼
+  Create a program that checks if a person is an admin, using just if...else statement. 
 
 Description: 
   In this task, you will create a program that checks if a person is an admin, using just if...else statement.
@@ -35,8 +35,8 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 3 (if..else Statement): (20 pts)
-   Write a program that checks if a number is positive, negative or zero, using if...else statement.
+Task 3 (if..else Statement): (20 pts) 🔢
+   Write a program that checks if a number is positive, negative or zero, using if...else statement. 
 
 Steps:
   1. Ask the user to enter a number. 
@@ -49,7 +49,7 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /*************************************************************************************************
-Task 4 (Nested if..else Statement): (30 pts)
+Task 4 (Nested if..else Statement): (30 pts) 👵🏼
 
 Steps:
   1. Create a program that prompts the user for their age and checks if they are old enough to vote. (Note: don't forget to convert the input into an integer)
@@ -61,7 +61,7 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /*************************************************************************************************
-Task 5 (if..else Statement): (100 pts)
+Task 5 (if..else Statement): (100 pts) 🍕
 
 Description:
   You are building a pizza ordering system.
