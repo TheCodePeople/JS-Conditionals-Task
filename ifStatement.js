@@ -1,33 +1,33 @@
 /************************************************************************************************
-Task 1 (if..else Statement):
+Task 1 (if..else Statement): (10 pts)
   Create a program that checks if a person is old enough to drive, using an if statement.
 
 Steps:
-  1. Define a variable named userAge to store the person's age.
-  2. Define a variable to store the minimum driving age in your country.
+  1. Define a variable named `userAge` to store the person's age.
+  2. Define a variable named `minDrivingAge` to store the minimum driving age in your country.
   3. Write an if statement that checks whether the person's age is greater than or equal to the minimum driving age.
     - If the person's age is greater than or equal to the minimum driving age, print a message saying that the person is old enough to drive.
     - If the person's age is less than the minimum driving age, print a message saying that the person is not eligible to get a license yet.
 
 Note:
-   You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
+   You can change the value of the age variable to test different cases. 
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 2 (if..else Statement): 
+Task 2 (if..else Statement):  (20 pts)
   Create a program that checks if a person is an admin, using just if...else statement.
 
 Description: 
   In this task, you will create a program that checks if a person is an admin, using just if...else statement.
-  You will define two variables, userName and role, and assign them the values userName and Admin respectively.
-  Then, you will check if the person's userName is equal to userName and their role is equal to Admin.
+  You will define two variables, `userName` and `role`, and assign them the values "Hamza" and "Admin" respectively.
+  Then, you will check if the person's userName is equal to "Hamza" and their role is equal to "Admin".
   If both conditions are true, you will print a message saying that the person has permission to enter.
   Otherwise, you will print a message saying that they are not allowed to enter.
 
 Steps:  
   1. Define two variables username and role, and assign them the values "YOUR_NAME" and "Admin" respectively.
-  2. Ask the user to enter his/her name and store it in a variable called enteredUsername.
+  2. Ask the user to enter his/her name and store it in a variable called enteredUsername. (use the prompt function)
   3. Check if the entered username is equal to YOUR_NAME and the role is equal to Admin.
     - If both conditions are true, print the message Hello ${enteredUsername}, and you have permission to access the restricted area.
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
@@ -35,11 +35,11 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /************************************************************************************************
-Task 3 (if..else Statement):
+Task 3 (if..else Statement): (20 pts)
    Write a program that checks if a number is positive, negative or zero, using if...else statement.
 
 Steps:
-  1. Ask the user to enter a number.
+  1. Ask the user to enter a number. 
   2. Convert the input to a float or integer.
   3. Write an if...else statement to check whether the number is positive, negative or zero.
     - If the number is positive, print a message saying that it is positive.
@@ -49,19 +49,19 @@ Steps:
 // TODO: ADD YOUR CODE BELOW
 
 /*************************************************************************************************
-Task 4 (if..else Statement):
+Task 4 (Nested if..else Statement): (30 pts)
 
 Steps:
-  1. Create a program that prompts the user for their age and checks if they are old enough to vote.
-    - If the user is 18 or older, the program should ask if they are registered to vote (Hint: Use confirm() function). 
-    - If they are registered, the program should print the message "Great! You are all set to vote."
-    - If they are not registered, the program should print the message "You still have time to register to vote."
+  1. Create a program that prompts the user for their age and checks if they are old enough to vote. (Note: don't forget to convert the input into an integer)
+    - If the user is 18 or older, the program should ask if they would like to continue to the voting part or not (Hint: Use the confirm() function). Store the answer in a variable called confirmation.
+    - If they press "OK", the program should print the message "Great! You are all set to vote."
+    - If they press "Cancel", the program should print the message "Why did you waste my time then? 😀."
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
 /*************************************************************************************************
-Task 5 (if..else Statement): 
+Task 5 (if..else Statement): (100 pts)
 
 Description:
   You are building a pizza ordering system.
@@ -76,15 +76,15 @@ Description:
   - If the user orders both more than 2 toppings and a drink, they receive a 15% discount on their order.
 
 Steps:
-  Step 1: Ask the user to select a pizza size
+  Step 1: Ask the user to select a pizza size (small, medium, large)
     - Use the prompt() method to ask the user to input the pizza size.
     - Use the toLowerCase() method to convert the user input to lowercase for easier comparison.
     - Store the user input in a variable called size.
 
   Step 2: Set the base price based on the pizza size
     - Create a variable called price.
-    - Use an if-else-if statement to compare the size variable with the pizza sizes and set the price variable accordingly.
-    - If the user input is not a valid pizza size, log an error message to the console.
+    - Use an if-else-if statement to compare the size variable with the pizza sizes and set the price variable accordingly. (10, 20, 30)
+    - If the user input is not a valid pizza size (small OR medium OR large), log an error message to the console. (Please select a valid price)
 
   Step 3: Ask the user to select toppings
     - Use the prompt() method to ask the user to input the toppings they want, separated by commas.
