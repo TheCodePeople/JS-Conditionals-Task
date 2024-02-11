@@ -13,13 +13,13 @@ Note:
    You can change the value of the age variable to test different cases. If the person's age is less than the minimum driving age, nothing will be printed.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-let userAge = 23;
-let  minimum=18;
-if (userAge >= minimum)
-{
-  console.log(" the person is old to drive")
+let userAge = 24;
+let minimum = 18;
+if (userAge >= minimum) {
+  console.log(" the person is old to drive");
+} else {
+  console.log("    the person is not old to drive.");
 }
-else{console.log("    the person is not old to drive.")}
 /************************************************************************************************
 Task 2 (if..else Statement): 
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -39,17 +39,14 @@ Steps:
     - If either of the conditions is false, print the message Hello ${userName}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
-let YOUR_NAME = "admin";
-let role= 1212;
-let enteredUsername=prompt("give user name");
-if (enteredUsername == YOUR_NAME && role==1212){
-console.log("welcam ")
+let your_Name = "admin";
+let role = 1212;
+let enteredUsername = prompt("give user name");
+if (enteredUsername == your_Name && role == 1212) {
+  console.log("welcam ");
+} else {
+  console.log("I`m sorry");
 }
-else{
-  console.log("I`m sorry")
-}
-
- 
 
 /************************************************************************************************
 Task 3 (if..else Statement):
@@ -64,19 +61,15 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-let number=prompt("enter namber");
-let float=parseInt(number);
+let number = prompt("enter namber");
+let float = parseInt(number);
 
-if ( float >= 0) 
-{
-  console.log("the number is positive ")
+if (float >= 0) {
+  console.log("the number is positive ");
 }
- if ( float <= 0)
-{
-  console.log("the number is negatine ")
-
-}
-else console.log("is zero ");
+if (float <= 0) {
+  console.log("the number is negatine ");
+} else console.log("is zero ");
 /*************************************************************************************************
 Task 4 (if..else Statement):
 
@@ -88,15 +81,15 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-let Age=prompt("ENTRE AGE ");
-if (Age >=18)
-{
-  console.log("Great! You are all set to vote.")
+let Age = prompt("ENTRE AGE ");
+if (Age >= 18) {
+  let conformion = confirm("you are volte");
+  console.log(conformion);
+  console.log("Great! You are all set to vote.");
+} else if (Age < 18) {
+  console.log("You still have time to register to vote");
 }
-else if (Age < 18) {
-  console.log("You still have time to register to vote")
-}
-let younger=18-Age;
+let younger = 18 - Age;
 console.log(younger);
 /*************************************************************************************************
 Task 5 (if..else Statement): 

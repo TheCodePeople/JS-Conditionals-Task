@@ -17,42 +17,77 @@ Steps:
 Note: Check the file called "Clothing_Recommendations.md" to find the list of weather forecasts and their corresponding clothing recommendations  
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-//console.log("Scorpio , Gemini ");
-let zodiac=prompt("enter the tower  (Scorpio , Gemini)");
+let zodiac = prompt("enter the tower  (Scorpio , Gemini)");
+// console.log(zodiac.toLowerCase());
 
-switch(zodiac)
-{ 
-  case 'Aries':  console.log (" Horoscope: You're feeling bold and energetic today, Aries! Take advantage of this burst of energy and tackle any challenges that come your way. Your determination and confidence will help you achieve your goals. ");
-  break;
+switch (zodiac) {
+  case "Aries":
+    console.log(
+      " Horoscope: You're feeling bold and energetic today, Aries! Take advantage of this burst of energy and tackle any challenges that come your way. Your determination and confidence will help you achieve your goals. "
+    );
+    break;
 
-  case 'Gemini': console.log(" It's a good day to focus on your financial matters, Taurus. Take a look at your budget and make any necessary adjustments. Avoid impulsive spending and save for the future.");
-  break;  
- case "Taurus": console.log("It's a good day to focus on your financial matters, Taurus. Take a look at your budget and make any necessary adjustments. Avoid impulsive spending and save for the future");
- break;
- 
- case 'Cancer':console.log("It's time to take care of yourself, Cancer. Pay attention to your emotional well-being and prioritize self-care. Take a break from your usual routine and indulge in some self-nurturing activities");
- break;
+  case "Gemini":
+    console.log(
+      " It's a good day to focus on your financial matters, Taurus. Take a look at your budget and make any necessary adjustments. Avoid impulsive spending and save for the future."
+    );
+    break;
+  case "Taurus":
+    console.log(
+      "It's a good day to focus on your financial matters, Taurus. Take a look at your budget and make any necessary adjustments. Avoid impulsive spending and save for the future"
+    );
+    break;
 
- case 'Leo':console,log(" Your creativity is on fire today, Leo. Express yourself through your artistic pursuits and let your inner child come out to play. Your confidence and charisma will attract attention");
- break;
+  case "Cancer":
+    console.log(
+      "It's time to take care of yourself, Cancer. Pay attention to your emotional well-being and prioritize self-care. Take a break from your usual routine and indulge in some self-nurturing activities"
+    );
+    break;
 
- case'Virgo':console.log("It's a good day for organizing and decluttering, Virgo. Clean up your physical space and tidy up your thoughts. Focus on practical matters and set achievable goals.");
- break;
- case'Libra':console.log("Your diplomacy and charm are in full force today, Libra. Use your skills to resolve conflicts and bring harmony to your relationships. Seek balance and fairness in all your interactions");
- break;
- case'Scorpio':console.log("Your intuition is heightened today, Scorpio. Trust your instincts and delve into your emotions. Explore your subconscious mind and gain insights into your inner workings.");
-break;
-case'Sagittarius':console.log("You're in the mood for adventure, Sagittarius. Plan a trip or explore new possibilities. Your optimism and enthusiasm will inspire others, and you may learn something new");
-break;
-case'Capricorn':console.log("It's time to focus on your career goals, Capricorn. Set clear objectives and work diligently towards achieving them. Your hard work and determination will pay off in the long run.");
-break;
-case'Aquarius':console.log("Your humanitarian side is in the spotlight today, Aquarius. Engage in activities that promote social causes and make a positive impact. Connect with like-minded individuals and share your innovative ideas.");
-break;
-case'Pisces':console.log(" Your sensitivity and intuition are heightened today, Pisces. Pay attention to your dreams and emotions, as they may hold important messages for you. Take some time for self-reflection and introspection.");
-break;
+  case "Leo":
+    console.log(
+      " Your creativity is on fire today, Leo. Express yourself through your artistic pursuits and let your inner child come out to play. Your confidence and charisma will attract attention"
+    );
+    break;
 
- default:
- console.log("Sorry, we do not have a horoscope for that sign.");
+  case "Virgo":
+    console.log(
+      "It's a good day for organizing and decluttering, Virgo. Clean up your physical space and tidy up your thoughts. Focus on practical matters and set achievable goals."
+    );
+    break;
+  case "Libra":
+    console.log(
+      "Your diplomacy and charm are in full force today, Libra. Use your skills to resolve conflicts and bring harmony to your relationships. Seek balance and fairness in all your interactions"
+    );
+    break;
+  case "Scorpio":
+    console.log(
+      "Your intuition is heightened today, Scorpio. Trust your instincts and delve into your emotions. Explore your subconscious mind and gain insights into your inner workings."
+    );
+    break;
+  case "Sagittarius":
+    console.log(
+      "You're in the mood for adventure, Sagittarius. Plan a trip or explore new possibilities. Your optimism and enthusiasm will inspire others, and you may learn something new"
+    );
+    break;
+  case "Capricorn":
+    console.log(
+      "It's time to focus on your career goals, Capricorn. Set clear objectives and work diligently towards achieving them. Your hard work and determination will pay off in the long run."
+    );
+    break;
+  case "Aquarius":
+    console.log(
+      "Your humanitarian side is in the spotlight today, Aquarius. Engage in activities that promote social causes and make a positive impact. Connect with like-minded individuals and share your innovative ideas."
+    );
+    break;
+  case "Pisces":
+    console.log(
+      " Your sensitivity and intuition are heightened today, Pisces. Pay attention to your dreams and emotions, as they may hold important messages for you. Take some time for self-reflection and introspection."
+    );
+    break;
+
+  default:
+    console.log("Sorry, we do not have a horoscope for that sign.");
 }
 
 /************************************************************************************************
@@ -74,20 +109,28 @@ Example:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 //console.log("Rainy , Sunny , Cloidy , Snowy ")
-let weather=prompt("enter the forecasted weather for the day (Rainy , Sunny , Cloidy , Snowy)");
+let weather = prompt(
+  "enter the forecasted weather for the day (Rainy , Sunny , Cloidy , Snowy)"
+);
 
-switch(weather)
-{
-case 'Rainy': console.log(" Wear a waterproof jacket, boots, and bring an umbrella") ;
-break;
+switch (weather) {
+  case "Rainy":
+    console.log(" Wear a waterproof jacket, boots, and bring an umbrella");
+    break;
 
-case 'Sunny':console.log("Wear sunscreen, a hat, and sunglasses");
-break;
+  case "Sunny":
+    console.log("Wear sunscreen, a hat, and sunglasses");
+    break;
 
-case  'Cloudy': console.log("Beware, there is a possibility of rain");
-break;
+  case "Cloudy":
+    console.log("Beware, there is a possibility of rain");
+    break;
 
-case 'Snowy': console.log("Wear plenty of clothes, it's cold");
-break;
-default :console.log("Sorry, we do not have recommendations for that weather condition");
+  case "Snowy":
+    console.log("Wear plenty of clothes, it's cold");
+    break;
+  default:
+    console.log(
+      "Sorry, we do not have recommendations for that weather condition"
+    );
 }
