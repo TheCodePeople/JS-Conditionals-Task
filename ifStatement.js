@@ -13,7 +13,14 @@ Note:
    You can change the value of the age variable to test different cases. 
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+// let userage=21
+// age=18
+// if (userage>age) {console.log("the person is old enough to drive.")
+  
+// }
+// else{
+//   console.log("not lu to drive")
+// }
 /************************************************************************************************
 Task 2 (if..else Statement):  (20 pts)
   Create a program that checks if a person is an admin, using just if...else statement.
@@ -32,7 +39,16 @@ Steps:
     - If both conditions are true, print the message Hello ${enteredUsername}, and you have permission to access the restricted area.
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
-// TODO: ADD YOUR CODE BELOW
+// // TODO: ADD YOUR CODE BELOW
+//  let userName="gg";   let rol="admin";
+//  let enteruserName=prompt('enter usname')
+// if (userName==enteruserName&&rol=="admin") {
+//    console.log (`hello ${userName}`)
+//  }
+//  else  {
+//  console.log( "I'm sorry but it seems you're not authorized to access the restricted area." );
+  
+//  }
 
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts)
@@ -48,6 +64,21 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+
+// let usernumbert =prompt('enter num')
+
+// let persdnumber=parseInt(usernumbert);
+// if (persdnumber>0) {console.log("positive")
+
+// }
+// else if (persdnumber<0) {
+
+//   console.log("nig")
+// }
+// else{ console.log("zero")
+
+// }
+
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (30 pts)
 
@@ -59,6 +90,23 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+// let ageuser=prompt("enter age")
+
+// if (ageuser >= 18 )
+// {
+//   let isregister=confirm("are u reg to vote")
+// if (isregister) {
+// console.log("ou still have time to register to vote.");
+// }else{
+//   console.log("Great! You are all set to vote.");
+// }
+
+  
+// }
+
+
+
+
 
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts)
@@ -122,3 +170,4 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+
