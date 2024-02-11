@@ -14,13 +14,13 @@ Note:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let userAge = 45;
-// let minDrivingAge = 18;
-// if (userAge < minDrivingAge) {
-//   console.log("You are not eligible to get a driving license yet.");
-// } else {
-//   console.log("You are eligible to get a driving license, YAY!");
-// }
+let userAge = 45;
+let minDrivingAge = 18;
+if (userAge < minDrivingAge) {
+  console.log("You are not eligible to get a driving license yet.");
+} else {
+  console.log("You are eligible to get a driving license, YAY!");
+}
 
 /************************************************************************************************
 Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
@@ -42,15 +42,15 @@ Steps:
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let userName = "zainab";
-// let role = "Admin";
-// let enteredUsername = prompt("Enter your name:");
+let userName = "zainab";
+let role = "Admin";
+let enteredUsername = prompt("Enter your name:");
 
-// if (enteredUsername.toLowerCase().trim() === userName && role === "Admin") {
-//   console.log(`Hello ${enteredUsername}, you have permission to access the restricted area.`);
-// } else {
-//   console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.`);
-// }
+if (enteredUsername.toLowerCase().trim() === userName && role === "Admin") {
+  console.log(`Hello ${enteredUsername}, you have permission to access the restricted area.`);
+} else {
+  console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.`);
+}
 
 
 /************************************************************************************************
@@ -67,15 +67,15 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let enteredNumber = prompt("Enter a number:");
-// let number = parseInt(enteredNumber);
-// if (number === 0) {
-//   console.log("The number is zero");
-// } else if (number % 2 === 0) {
-//   console.log("The number is positive");
-// } else {
-//   console.log("The number is negative");
-// }
+let enteredNumber = prompt("Enter a number:");
+let number = parseInt(enteredNumber);
+if (number === 0) {
+  console.log("The number is zero");
+} else if (number % 2 === 0) {
+  console.log("The number is positive");
+} else {
+  console.log("The number is negative");
+}
 
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (15 pts) 👵🏼
@@ -89,19 +89,19 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let age = parseInt(prompt("Enter your age:"));
-// if (age >= 18) {
-//   let confirmation = confirm("Would you like to continue?");
+let age = parseInt(prompt("Enter your age:"));
+if (age >= 18) {
+  let confirmation = confirm("Would you like to continue?");
 
-//   if (confirmation) {
-//     console.log("Great! You are all set to vote.");
-//   } else {
-//     console.log("Why did you waste my time then? 😀.");
-//   }
-// } else {
-//   let remainingYears = 18 - age;
-//   console.log(`You will be eligible to vote in ${remainingYears} years`);
-// }
+  if (confirmation) {
+    console.log("Great! You are all set to vote.");
+  } else {
+    console.log("Why did you waste my time then? 😀.");
+  }
+} else {
+  let remainingYears = 18 - age;
+  console.log(`You will be eligible to vote in ${remainingYears} years`);
+}
 
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts) 🍕
