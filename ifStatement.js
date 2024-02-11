@@ -69,12 +69,13 @@ Steps:
 
 let enteredNumber = prompt("Enter a number:");
 let number = parseInt(enteredNumber);
-if (number === 0) {
-  console.log("The number is zero");
-} else if (number % 2 === 0) {
+if (number > 0) {
   console.log("The number is positive");
-} else {
+} else if (number < 0) {
   console.log("The number is negative");
+} else {
+  console.log("The number is zero");
+
 }
 
 /*************************************************************************************************
