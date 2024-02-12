@@ -42,18 +42,18 @@ Steps:
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let userName = "Hamza";
-// let role = "admin";
+let userName = "Hamza";
+let role = "admin";
 
-// let enteredUsername = prompt("Enter your name: ")
-// let your_role = prompt("Enter your role: ")
+let enteredUsername = prompt("Enter your name: ")
+let your_role = prompt("Enter your role: ")
 
-// if (enteredUsername === userName && your_role === role) {
-//   console.log(`Hello ${enteredUsername}, and you have permission to access the restricted area.`);
-// } else {
-//   console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.`);
+if (enteredUsername === userName && your_role === role) {
+  console.log(`Hello ${enteredUsername}, and you have permission to access the restricted area.`);
+} else {
+  console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.`);
 
-// }
+}
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts) 🔢
    Write a program that checks if a number is positive, negative or zero, using if...else statement. 
@@ -68,19 +68,19 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-// let number = prompt("Enter a number: ")
-// number = parseInt(number);
+let number = prompt("Enter a number: ")
+number = parseInt(number);
 
-// if (number === 0) {
-//   console.log("this number is zero");
+if (number === 0) {
+  console.log("this number is zero");
 
-// } else if (number % 2 != 0){
-//   console.log("this number is odd");
+} else if (number % 2 != 0){
+  console.log("this number is odd");
 
-// }else {
-//     console.log("this number is even");
+}else {
+    console.log("this number is even");
 
-// }
+}
 
 
 /*************************************************************************************************
@@ -95,7 +95,7 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
-let age = prompt("enter your age");
+let age = 17
 
 if (age >= 18) {
   let confirmation = confirm("If you wish to continue voting or not, please enter either OK or Cancel")
@@ -176,3 +176,69 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+
+//step 1
+let size = prompt("Enter the pizza size ").toLowerCase();
+
+
+//step 2
+let price ;
+
+if (size === "large") {
+  price = 20;
+}
+ else if(size === "middle") {
+  price = 15;
+
+}
+else if(size === "small"){
+  price = 10;
+}
+else {
+  console.log("Please enter a valid entry");
+}
+
+
+//step 3
+let toppings = prompt("Enter the toppings separated by commas:");
+ toppings = toppings.split(',');
+
+
+//step 4
+let toppingCost ;
+
+if (toppings.length <= 2) {
+  toppingCost = toppings.length * 2;
+ 
+} else {
+  toppingCost = toppings.length * 2 * 0.9;
+}
+
+console.log(toppingCost);
+//step 5
+let drink = prompt("do you need drinks enter yes or no").toLowerCase;
+
+
+//step 6
+let drinkCost = 0;
+
+if (drink === "yes") {
+  drinkCost = 2;
+}
+
+//step 7
+let totalCost =price + drinkCost + toppingCost;
+
+//step 8
+if (toppings.length > 2 && drink === "yes") {
+  totalCost = totalCost - (totalCost * 0.15);
+
+} else if(toppings.length > 2){
+  totalCost = totalCost - (totalCost * 0.1) ;
+
+} else if(drink === "yes"){
+  totalCost -= 2;
+}
+
+console.log(`The total price of your order $ ${totalCost.toFixed(2)}`);
+
