@@ -13,7 +13,13 @@ Note:
    You can change the value of the age variable to test different cases. 
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
-
+// let userAge = prompt("enter user age")
+// let minDriveAge = 18
+// if(userAge>= minDriveAge){
+//   console.log("The person is old enough to drive.")
+// }else if(userAge<= minDriveAge){
+//   console.log("The person is not eligible to get a license yet.")
+// }
 /************************************************************************************************
 Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
   Create a program that checks if a person is an admin, using just if...else statement. 
@@ -33,7 +39,17 @@ Steps:
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+// let username= "zainab"
+// let role= "admin"
+// let enteredUsername = prompt ("enter your name")
+// let enterrole = prompt("enter your role")
 
+// if(enteredUsername=== username && enterrole=== role){
+//   console.log("helloo"+enteredUsername+"you have permission to access the restricted area.")
+// }else{
+//   console.log("helloo "+enteredUsername +" Iam sorry but it seems you are not authorized to access the restricted area.")
+
+// }
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts) 🔢
    Write a program that checks if a number is positive, negative or zero, using if...else statement. 
@@ -47,7 +63,17 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+// let num= Math.floor(prompt("enter number "))
 
+// if (num>0){
+//     console.log(num + "  the number is positive")
+// }
+// else if (num <0){
+//     console.log(num + "  the number is negative")
+// }
+// else{
+//     console.log(num+"  the number is zero")
+// }
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (15 pts) 👵🏼
 
@@ -59,6 +85,21 @@ Steps:
     - If the user is younger than 18, the program should calculate how many years are left until they turn 18 and print the message "You will be eligible to vote in X years", where X is the number of years left.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+// let userAge= prompt("enter your age") 
+// if(userAge>= 18){
+//   confirming=confirm("would you like to continue to the voting part?")
+//   if( confirming== true){
+//     console.log("Great! You are all set to vote.")
+//   }
+//   else{
+//     console.log("Why did you waste my time then? 😀")
+//   }
+// }
+// else{
+//   let remainAge= 18-userAge
+//   console.log("You will be eligible to vote in  "+ remainAge +"  years")
+
+// }
 
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts) 🍕
@@ -122,3 +163,51 @@ Steps:
     - Use the toFixed() method to format the totalCost to 2 decimal places.
 *************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+//step1
+let size=prompt("enter pizza size")
+size=size.toLowerCase()
+//step2
+let price
+if(size==="small"){
+  price = 10
+}else if(size==="medium"){
+  price = 20
+}else if(size==="large"){
+  price = 30
+}else{
+  console.log("Please select a valid size")
+}
+//step3
+let toppings =  prompt(    "Please enter the toppings you want").split(",") || [];
+//step4
+ let toppingCost 
+  if(toppings.length <=2){
+    toppingCost= toppings.length*2
+  }else{
+    toppingCost=toppings.length*2
+    toppingCost=toppingCost*0.9
+  }
+  //step5
+  let drink=prompt("would you like to add a drink?")
+drink=drink.toLowerCase()
+//step6
+let drinkCost = 0
+if(drink=="yes"){
+  drinkCost=2
+}
+//step7
+let totalCost= price + toppingCost + drinkCost
+//step8
+let discount = 0;
+if (toppings.length > 2 && drink) {
+  discount = totalCost * (15 / 100);
+  totalCost = totalCost- discount;
+} else if (toppings.length > 2) {
+  discount = totalCost * (10 / 100);
+  totalCost = totalCost- discount;
+} else if (drink) {
+  totalCost = totalCost - 2;
+}
+//step9
+totalCost=totalCost.toFixed(2)
+console.log("the total cost is:" + totalCost)
