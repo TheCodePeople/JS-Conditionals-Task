@@ -14,6 +14,13 @@ Note:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+let userAge = 30
+let minDrivingAge = 18
+
+if (userAge >= minDrivingAge){
+  console.log("You are old enough to get a driver's license");
+  }  else{
+    console.log("You are not old enough to get a driver's license")}
 /************************************************************************************************
 Task 2 (if..else Statement):  (15 pts) 👨🏽‍💼
   Create a program that checks if a person is an admin, using just if...else statement. 
@@ -33,7 +40,14 @@ Steps:
     - If either of the conditions is false, print the message Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access the restricted area.
 ***********************************************************/
 // TODO: ADD YOUR CODE BELOW
+let userName = "Baneen"
+let role = "Admin"
+let enteredUsername = prompt("What is your name?");
+userName = enteredUsername;
 
+if (enteredUsername.toLowerCase().trim() == userName && role.toLowerCase().trim() === "admin"){
+console.log(`Hello ${enteredUsername}, and you have permission to access the restricted area`)
+}else {console.log(`Hello ${enteredUsername}, I'm sorry but it seems you're not authorized to access this restricted area.`)}
 /************************************************************************************************
 Task 3 (if..else Statement): (20 pts) 🔢
    Write a program that checks if a number is positive, negative or zero, using if...else statement. 
@@ -47,7 +61,15 @@ Steps:
     - If the number is zero, print a message saying that it is zero.
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
+let enteredNumber = prompt("Add a number and I'll tell you if it's positive, negative or zero")
 
+enteredNumber = (enteredNumber)
+
+if (enteredNumber > 0){
+console.log ("Positive Number detected")
+}else if(enteredNumber < 0){
+  console.log("Negative Number detected")}
+  else {console.log("The number is zero")}
 /*************************************************************************************************
 Task 4 (Nested if..else Statement): (15 pts) 👵🏼
 
@@ -60,6 +82,13 @@ Steps:
 ************************************************************************************************/
 // TODO: ADD YOUR CODE BELOW
 
+userAge = prompt("What's your age?")
+const legalAge = 18
+userAge = Number(userAge)
+
+if (userAge > legalAge){
+  confirm("Would you like to continue?")
+}
 /*************************************************************************************************
 Task 5 (if..else Statement): (100 pts) 🍕
 
