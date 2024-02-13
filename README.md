@@ -18,9 +18,9 @@ To get started, please follow the instructions below:
 
 After completing the tasks, please follow the instructions below to submit your work:
 
-1. Run git add . in your terminal to track the changes
-2. Run git commit -m "<commit-message>" to stage the changes
-3. Run git push to push the changes to your forked repository
+1. Run `git add .` in your terminal to track the changes
+2. Run `git commit -m "<commit-message>"` to stage the changes
+3. Run `git push` to push the changes to your forked repository
 4. Create a pull request to submit your work for review
 
 Please note that you must fork the repository before cloning it.
